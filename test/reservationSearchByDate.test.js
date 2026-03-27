@@ -1,3 +1,7 @@
+import { ReservationManagement } from "../reservationManagement.js";
+import { Reservation } from "../reservation.js";
+import { ReservationSearchByDate } from "../reservationSearchByDate.js";
+
 describe("ReservationSearchByDate", () => {
   test("returns reservation active on given date", () => {
     const management = new ReservationManagement();
