@@ -1,3 +1,5 @@
+import { Reservation } from "../reservation.js";
+
 describe("Reservation", () => {
   test("contains name", () => {
     const reservation = new Reservation("Test Reservation", "12345", "2022-01-01", "2022-01-05");
