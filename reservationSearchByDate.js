@@ -4,8 +4,8 @@ export class ReservationSearchByDate {
   }
 
   search(dateString) {
-    const target = new Date(dateString);
-    return this.reservations.filter((r) => this._isActiveOn(r, target));
+    const targetDate = new Date(dateString);
+    return this.reservations.filter((r) => this._isActiveOn(r, targetDate));
   }
 
   _isActiveOn(reservation, targetDate) {
